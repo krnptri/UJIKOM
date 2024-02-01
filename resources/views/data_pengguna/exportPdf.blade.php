@@ -6,7 +6,7 @@ $Tanggal = new \App\Helpers\Tanggal; //panggil no static function
 <html>
 <head>
 	<title>Laporan Data Pengguna</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 	<style type="text/css">
@@ -20,6 +20,7 @@ $Tanggal = new \App\Helpers\Tanggal; //panggil no static function
 			background:#f4f4f4;
 		}
 	</style>
+
 	<center>
 		<h4>DATA PENGGUNA</h4>
 		<p>Waktu Export : {{date('d-m-Y H:i')}}</p>
@@ -27,27 +28,26 @@ $Tanggal = new \App\Helpers\Tanggal; //panggil no static function
  
 	<table class='table table-bordered'>
 		<thead>
-		<tr>
-			<th>No</th>
-			<th>Nama</th>
-			<th>Email</th> 
-			<th>Password</th>  
-			
-			
-		</tr>
+			<tr>
+				<th>No</th>
+				<th>Name</th>
+				<th>Email</th> 
+			</tr>
 		</thead>
+
 		<tbody>
-		@php $no=1; @endphp
-                            @foreach($data as $dt)
-                                <tr>
-                                    <td>{{$no++}}</td>
-                                    <td>{{$dt->name??''}}</td>
-                                    <td>{{$dt->email??''}}</td>
-                                    
-                                </tr>
-                            @endforeach
+			@php 
+				$no=1; 
+			@endphp
+        	@foreach($data as $dt)
+            	<tr>
+            		<td>{{$no++}}</td>
+                	<td>{{$dt->name??''}}</td>
+                	<td>{{$dt->email??''}}</td>
+            	</tr>
+        	@endforeach
 		</tbody>
+		
 	</table>
- 
 </body>
 </html>

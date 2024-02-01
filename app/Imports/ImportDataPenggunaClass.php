@@ -57,7 +57,6 @@ class ImportDataPenggunaClass implements ToCollection, WithCalculatedFormulas
                 //COSTUM REQUEST
                 
                 
-      
                 //READY REQUEST
                 $trDt[$idx]['name'] = $name;
                 $trDt[$idx]['email'] = $email;

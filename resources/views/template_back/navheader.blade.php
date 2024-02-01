@@ -10,7 +10,6 @@
                     <a href="/" class="header-logo"><img src="{{asset('')}}back/img/brand/logo.png" class="logo-11"></a>
                     <a href="/" class="header-logo"><img src="{{asset('')}}back/img/brand/logo-white.png" class="logo-1"></a>
                 </div>
-              
             </div>
             <button class="navbar-toggler nav-link icon navresponsive-toggler vertical-icon ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fe fe-more-vertical header-icons navbar-toggler-icon"></i>
@@ -43,16 +42,13 @@
                             <div class="nav-item full-screen fullscreen-button">
                                 <a class="new nav-link full-screen-link"   href="javascript:void(0);"><i class="fe fe-maximize"></i></span></a>
                             </div>
-                            
                             <div class="dropdown main-profile-menu nav nav-item nav-link">
                                 <a class="profile-user d-flex" href=""><img src="{{asset('')}}back/img/a.jpg" alt="user-img" class="rounded-circle mCS_img_loaded"><span></span></a>
-
                                 <div class="dropdown-menu">
                                     <div class="main-header-profile header-img">
                                         <div class="main-img-user"><img alt="" src="{{asset('')}}back/img/a.jpg"></div>
                                         <h6>@auth {{ auth()->user()->name }} @endauth</h6>
                                         <span>@auth {{ auth()->user()->namerole }} @endauth</span>
-
                                     </div>
                                     <!-- <a class="dropdown-item" href=""><i class="far fa-user"></i> My Profile</a>
                                     <a class="dropdown-item" href=""><i class="far fa-clock"></i> Activity Logs</a> -->

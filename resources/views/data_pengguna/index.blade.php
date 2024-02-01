@@ -25,9 +25,7 @@ $Konversi = new \App\Helpers\Konversi; //panggil no static function
     <div class="row row-sm">
         <div class="col-xl-12 col-lg-12 col-sm-12 col-md-12">
             <div class="card">
-                
-
-                <div class="pd-t-10 pd-s-10 pd-e-10 bg-white bd-b">
+              <div class="pd-t-10 pd-s-10 pd-e-10 bg-white bd-b">
                     <div class="row">
                         <div class="col-md-6">
                             <p>Data Pengguna</p>
@@ -102,9 +100,7 @@ $Konversi = new \App\Helpers\Konversi; //panggil no static function
                 </div>
             </div>
         </div>
-
     </div>
-
 
 <!-- Modal effects -->
 <div class="modal fade effect-scale" id="mdl_formImport" tabindex="-1" role="dialog" aria-hidden="true">
@@ -144,7 +140,6 @@ $Konversi = new \App\Helpers\Konversi; //panggil no static function
                             </div>
                         </div>
                     </div>
-                        
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="float-right btn btn-primary pd-x-30 mg-r-5 mg-t-5"><i class='fa fa-save'></i> Simpan</button>
@@ -154,12 +149,10 @@ $Konversi = new \App\Helpers\Konversi; //panggil no static function
             </div>
         </div>
     </div>
-    <!-- End Modal effects-->
-
 </div>
+ <!-- End Modal effects-->
+
 <!-- /container -->
-
-
 <script>
             $(function() {
                 // formelement
@@ -203,7 +196,5 @@ $Konversi = new \App\Helpers\Konversi; //panggil no static function
                 );
             }
         </script>
-
-
 
 @endsection

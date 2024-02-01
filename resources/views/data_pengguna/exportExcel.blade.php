@@ -20,6 +20,8 @@ $Tanggal = new \App\Helpers\Tanggal; //panggil no static function
         <th style="font-weight:bold;text-align:center;background:#f4f4f4;border:1px solid #000000;">Nama</th> <!-- kolom B -->
         <th style="font-weight:bold;text-align:center;background:#f4f4f4;border:1px solid #000000;">Email</th> <!-- kolom C -->
         <th style="font-weight:bold;text-align:center;background:#f4f4f4;border:1px solid #000000;">Password</th> <!-- kolom D -->
+        <th style="font-weight:bold;text-align:center;background:#f4f4f4;border:1px solid #000000;">Waktu Input</th> <!-- kolom E -->
+
     </tr>
     </thead>
     <tbody>
@@ -27,7 +29,7 @@ $Tanggal = new \App\Helpers\Tanggal; //panggil no static function
     @if(count($data))
     @foreach($data as $dt)
         @php 
-        $dbKategori=DB::table('tm_kategoribarang')->select('*')->where('id','=',$dt->kategori_id)->first();
+            $dbKategori=DB::table('tm_kategoribarang')->select('*')->where('id','=',$dt->kategori_id)->first();
         @endphp
         <tr>
             <td>{{$no++}}</td>
